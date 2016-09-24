@@ -1,0 +1,301 @@
+{
+'routes': [{
+'overview_polyline': {
+'points': 
+'ymcmEzrabOC`S?pFOE?nA?r@AzA?bA}CA'}, 
+'warnings': [
+'Walking directions are in beta.    Use caution \u2013 This route may be missing sidewalks or pedestrian paths.'], 
+'bounds': {
+'northeast': {
+'lat': 33.7747919, 
+'lng': -84.39102040000002}, 
+'southwest': {
+'lat': 33.7738867, 
+'lng': -84.3968661}}, 
+'waypoint_order': [], 
+'summary': 
+'Bobby Dodd Way NW', 
+'copyrights': 
+'Map data \xa92016 Google', 
+'legs': [{
+'distance': {
+'text': 
+'0.4 mi', 
+'value': 640}, 
+'traffic_speed_entry': [], 
+'end_address': 
+'266 4th St NW, Atlanta, GA 30313, USA', 
+'via_waypoint': [], 
+'start_address': 
+'104-106 3rd St NW, Atlanta, GA 30313, USA', 
+'start_location': {
+'lat': 33.7738867, 
+'lng': -84.39102040000002}, 
+'steps': [{
+'html_instructions': 
+'Head <b>west</b> on <b>3rd St NW</b> toward <b>3rd St Tunnel</b>', 
+'distance': {
+'text': 
+'292 ft', 
+'value': 89}, 
+'travel_mode': 
+'WALKING', 
+'start_location': {
+'lat': 33.7738867, 
+'lng': -84.39102040000002}, 
+'polyline': {
+'points': 
+'ymcmEzrabO?H?`B?rA'}, 
+'duration': {
+'text': 
+'1 min', 
+'value': 60}, 
+'end_location': {
+'lat': 33.7738887, 
+'lng': -84.3919811}}, {
+'html_instructions': 
+'Continue onto <b>Bobby Dodd Way NW</b>', 
+'distance': {
+'text': 
+'0.2 mi', 
+'value': 320}, 
+'travel_mode': 
+'WALKING', 
+'start_location': {
+'lat': 33.7738887, 
+'lng': -84.3919811}, 
+'polyline': {
+'points': 
+'ymcmEzxabOAtB?x@AbD?R?xAAR@rB?\\?jA'}, 
+'duration': {
+'text': 
+'5 mins', 
+'value': 292}, 
+'end_location': {
+'lat': 33.7739098, 
+'lng': -84.39544269999999}}, {
+'html_instructions': 
+'Turn <b>right</b> at <b>Cherry St NW</b>', 
+'distance': {
+'text': 
+'30 ft', 
+'value': 9}, 
+'travel_mode': 
+'WALKING', 
+'maneuver': 
+'turn-right', 
+'start_location': {
+'lat': 33.7739098, 
+'lng': -84.39544269999999}, 
+'polyline': {
+'points': 
+'}mcmEnnbbOOE'}, 
+'duration': {
+'text': 
+'1 min', 
+'value': 6}, 
+'end_location': {
+'lat': 33.7739916, 
+'lng': -84.3954143}}, {
+'html_instructions': 
+'Turn <b>left</b><div style="font-size:0.9em">Take the stairs</div>', 
+'distance': {
+'text': 
+'440 ft', 
+'value': 134}, 
+'travel_mode': 
+'WALKING', 
+'maneuver': 
+'turn-left', 
+'start_location': {
+'lat': 33.7739916, 
+'lng': -84.3954143}, 
+'polyline': {
+'points': 
+'mncmEhnbbO?nA?j@?F?b@?B?TA\\?z@?F'}, 
+'duration': {
+'text': 
+'2 mins', 
+'value': 123}, 
+'end_location': {
+'lat': 33.7740007, 
+'lng': -84.3968661}}, {
+'html_instructions': 
+'Turn <b>right</b><div style="font-size:0.9em">Destination will be on the right</div>', 
+'distance': {
+'text': 
+'289 ft', 
+'value': 88}, 
+'travel_mode': 
+'WALKING', 
+'maneuver': 
+'turn-right', 
+'start_location': {
+'lat': 33.7740007, 
+'lng': -84.3968661}, 
+'polyline': {
+'points': 
+'oncmElwbbOQ?kCA'}, 
+'duration': {
+'text': 
+'1 min', 
+'value': 57}, 
+'end_location': {
+'lat': 33.7747919, 
+'lng': -84.3968637}}], 
+'duration': {
+'text': 
+'9 mins', 
+'value': 538}, 
+'end_location': {
+'lat': 33.7747919, 
+'lng': -84.3968637}}]}, {
+'overview_polyline': {
+'points': 
+'ymcmEzrabO?jB?rAkA?W?yAA{@??NCNGJo@r@Y^[n@KZU`AI`A?`AH|@XpA`@|@d@fAPr@PjA?TAnBDb@nA?'}, 
+'warnings': [
+'Walking directions are in beta.    Use caution \u2013 This route may be missing sidewalks or pedestrian paths.'], 
+'bounds': {
+'northeast': {
+'lat': 33.7759299, 
+'lng': -84.39102040000002}, 
+'southwest': {
+'lat': 33.7738867, 
+'lng': -84.3968637}}, 
+'waypoint_order': [], 
+'summary': 
+'4th St NW', 
+'copyrights': 
+'Map data \xa92016 Google', 
+'legs': [{
+'distance': {
+'text': 
+'0.5 mi', 
+'value': 773}, 
+'traffic_speed_entry': [], 
+'end_address': 
+'266 4th St NW, Atlanta, GA 30313, USA', 
+'via_waypoint': [{
+'step_interpolation': 0.153846370868378, 
+'location': {
+'lat': 33.7740804, 
+'lng': -84.3919803}, 
+'step_index': 1}], 
+'start_address': 
+'104-106 3rd St NW, Atlanta, GA 30313, USA', 
+'start_location': {
+'lat': 33.7738867, 
+'lng': -84.39102040000002}, 
+'steps': [{
+'html_instructions': 
+'Head <b>west</b> on <b>3rd St NW</b> toward <b>3rd St Tunnel</b>', 
+'distance': {
+'text': 
+'292 ft', 
+'value': 89}, 
+'travel_mode': 
+'WALKING', 
+'start_location': {
+'lat': 33.7738867, 
+'lng': -84.39102040000002}, 
+'polyline': {
+'points': 
+'ymcmEzrabO?H?`B?rA'}, 
+'duration': {
+'text': 
+'1 min', 
+'value': 60}, 
+'end_location': {
+'lat': 33.7738887, 
+'lng': -84.3919811}}, {
+'html_instructions': 
+'Turn <b>right</b> onto <b>Techwood Dr NW</b>', 
+'distance': {
+'text': 
+'456 ft', 
+'value': 139}, 
+'travel_mode': 
+'WALKING', 
+'maneuver': 
+'turn-right', 
+'start_location': {
+'lat': 33.7738887, 
+'lng': -84.3919811}, 
+'polyline': {
+'points': 
+'ymcmEzxabOkA?I?M?I?oAAY?a@?'}, 
+'duration': {
+'text': 
+'2 mins', 
+'value': 102}, 
+'end_location': {
+'lat': 33.775135, 
+'lng': -84.391966}}, {
+'html_instructions': 
+'Turn <b>left</b> onto <b>4th St NW</b>', 
+'distance': {
+'text': 
+'0.3 mi', 
+'value': 500}, 
+'travel_mode': 
+'WALKING', 
+'maneuver': 
+'turn-left', 
+'start_location': {
+'lat': 33.775135, 
+'lng': -84.391966}, 
+'polyline': {
+'points': 
+'sucmExxabO?H?DAB?BAB?BA@?@A@CDCDMLWVEFA@IJEFGHOXKTCJGNELAFCJI^E^C`@?^?`@B^D\\Hf@Nh@JX@@NXBFP^Rf@Jf@DJFZBJ@PBP?H?JAnBDb@'}, 
+'duration': {
+'text': 
+'6 mins', 
+'value': 372}, 
+'end_location': {
+'lat': 33.7751935, 
+'lng': -84.3968625}}, {
+'html_instructions': 
+'Turn <b>left</b><div style="font-size:0.9em">Destination will be on the right</div>', 
+'distance': {
+'text': 
+'148 ft', 
+'value': 45}, 
+'travel_mode': 
+'WALKING', 
+'maneuver': 
+'turn-left', 
+'start_location': {
+'lat': 33.7751935, 
+'lng': -84.3968625}, 
+'polyline': {
+'points': 
+'}ucmEjwbbOnA?'}, 
+'duration': {
+'text': 
+'1 min', 
+'value': 36}, 
+'end_location': {
+'lat': 33.7747919, 
+'lng': -84.3968637}}], 
+'duration': {
+'text': 
+'10 mins', 
+'value': 570}, 
+'end_location': {
+'lat': 33.7747919, 
+'lng': -84.3968637}}]}], 
+'status': 
+'OK', 
+'geocoded_waypoints': [{
+'place_id': 
+'EikxMDQtMTA2IDNyZCBTdCBOVywgQXRsYW50YSwgR0EgMzAzMTMsIFVTQQ', 
+'geocoder_status': 
+'OK', 
+'types': [
+'street_address']}, {
+'place_id': 
+'ChIJDykjv44E9YgRmEE__Kkx1vY', 
+'geocoder_status': 
+'OK', 
+'types': [
+'street_address']}]}
