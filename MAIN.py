@@ -26,12 +26,12 @@ for i in range(len(arrayprocessed)):
         a.append(lng)
 for i in range(len(a)):
     if i%2 == 0:
-        obj3.write("Latitude:")
+        full.write("Latitude:")
     else:
-        obj3.write("Longitude:")
+        full.write("Longitude:")
     for y in range(len(a[i])):
 
-        obj3.write("\n"+a[i][y])
+        full.write("\n"+a[i][y])
 obj.write(arrayprocessed[0])
 obj.write(str(data).replace("u'", "'"))
 obj.close
