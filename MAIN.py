@@ -5,28 +5,34 @@ import urllib, json
 import re
 obj = file("A.json", "w")
 obj2 = file("B.json", "w")
-url = "https://maps.googleapis.com/maps/api/directions/json?origin=33.773687,-84.391022&destination=33.774791,-84.396436&mode=walking&alternatives=true&key=AIzaSyCIb177AKBFz11BDI_RIG4eXZPw3rJESqY"
+full = file("full.json","w")
+url = "https://maps.googleapis.com/maps/api/directions/json?origin=33.773687,-84.391022&destination=38.928933,-77.020103&mode=walking&alternatives=true&key=AIzaSyCIb177AKBFz11BDI_RIG4eXZPw3rJESqY"
+
 response = urllib.urlopen(url)
 data = json.load(response)
 obj2.write(str(data).replace("u'", "\n'"))
 obj2.close
 routes = []
-
-#print(data["routes"])
-for i in data["routes"]:
-    processed =str(i).replace("u'", "'")
-    arrayprocessed = processed.split("overview_polyline': ")
-
-
-arrayprocessed.pop(0)
+processed =str(data).replace("u'", "'")
+arrayprocessed = processed.split("overview_polyline': ")
+obj3 = file("C.txt","w")
 a = []
+for i in range(len(arrayprocessed)):
+    lat = re.findall("'lat': (-?\d+\.\d+)",arrayprocessed[i])
+    lng = re.findall("'lng': (-?\d+\.\d+)",arrayprocessed[i])
+    if lat:
+        a.append(lat)
+    if lng:
+        a.append(lng)
+for i in range(len(a)):
+    if i%2 == 0:
+        obj3.write("Latitude:")
+    else:
+        obj3.write("Longitude:")
+    for y in range(len(a[i])):
 
-m = re.search("'lat': (\d+)","'lat': 33.7738867, 'lng': -84.39102040000002 }, 'steps': [")
-if m:
-    print m.groups()[0]
-for i in routes:
-    for
-    a[i].append([])
+        obj3.write("\n"+a[i][y])
 obj.write(arrayprocessed[0])
-#obj.write(str(data).replace("u'", "'"))
+obj.write(str(data).replace("u'", "'"))
 obj.close
+obj3.close
