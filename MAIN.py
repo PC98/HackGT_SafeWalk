@@ -10,12 +10,9 @@ url = "https://maps.googleapis.com/maps/api/directions/json?origin=33.773687,-84
 
 response = urllib.urlopen(url)
 data = json.load(response)
-obj2.write(str(data).replace("u'", "\n'"))
-obj2.close
 routes = []
 processed =str(data).replace("u'", "'")
 arrayprocessed = processed.split("overview_polyline': ")
-obj3 = file("C.txt","w")
 a = []
 for i in range(len(arrayprocessed)):
     lat = re.findall("'lat': (-?\d+\.\d+)",arrayprocessed[i])
@@ -35,4 +32,4 @@ for i in range(len(a)):
 obj.write(arrayprocessed[0])
 obj.write(str(data).replace("u'", "'"))
 obj.close
-obj3.close
+
