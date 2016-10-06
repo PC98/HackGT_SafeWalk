@@ -1,7 +1,7 @@
 from DataCondenser import condense, coordinates
 from Parser import parse
 from PointPositionChecker import makeLine
-
+#hiii
 def main():
 	parse()
 	condense()
