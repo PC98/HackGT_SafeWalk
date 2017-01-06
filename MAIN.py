@@ -1,38 +1,30 @@
-from DataCondenser import condense, coordinates
-from Parser import parse
-from PointPositionChecker import makeLine
+import pickle
+from Parser import parse, set_of_coordinates
+from PointPositionChecker import make_line
+
 
 def main():
-	parse()
-	condense()
-	file = open("ParsedJSONoutputForReal.csv", "r")
-	data = file.read().split("\n")
-	path1 = []
-	path2 = []
-	for info in data:
-		t1 = []
-		t2 = []
-		tmp = info.split(",")
-		if len(tmp[0]) != 0:
-			t1.append(float(tmp[0]))
-			t1.append(float(tmp[1].split("\r")[0]))
-			path1.append(t1)
-		t2.append(float(tmp[2]))
-		t2.append(float(tmp[3]))
-		path2.append(t2)
-		
-	paths = [path1, path2]
-	scores = [0] * 2
-	for path in paths:
-		for i in range(len(path) - 1):
-			for j in coordinates:
-				if makeLine(float(j[0]), float(j[1]), path[i][0], path[i][1], path[i+1][0], path[i+1][1]):
-					scores[paths.index(path)] += int(j[2])
-	print("Path 1 is safer" if scores[0] < scores[1] else "Path 2 is safer")
+    parse()
+    num_of_routes = len(set_of_coordinates)
+    i = 0
+    pos = 0
+    minimum = 500
+    coordinates = pickle.load(open( "coordinates.p", "rb" ))
+    while i < num_of_routes:
+        j = 0
+        unsafe_score = 0
+        num_of_steps = len(set_of_coordinates[i])
+        while j < num_of_steps - 1:
+            for coordinate in coordinates:
+                if make_line(coordinate[0], coordinate[1], set_of_coordinates[i][j][0], set_of_coordinates[i][j][1],
+                             set_of_coordinates[i][j + 1][0], set_of_coordinates[i][j + 1][1]):
+                    unsafe_score += coordinates[coordinate]
+            j += 1
+        if unsafe_score < minimum:
+            minimum = unsafe_score
+            pos = i
+        i += 1
+    print("Path %d is safer with an unsafety score of %d" % (pos + 1, minimum))
+
+
 main()
-
-
-
-
-
-
