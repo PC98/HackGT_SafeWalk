@@ -22,9 +22,7 @@ def make_line(checkX, checkY, givenX1, givenY1, givenX2, givenY2):
         return True
     elif sign_check_1 < 0:
         sign_check_2 = sign(line3, checkX, checkY) * sign(line4, checkX, checkY)
-        if sign_check_2 <= 0:
-            return True
-        elif ((checkX - givenX1) ** 2 + (checkY - givenY1) ** 2 - R ** 2 <= 0 or (checkX - givenX2) ** 2 + (
+        if sign_check_2 <= 0 or ((checkX - givenX1) ** 2 + (checkY - givenY1) ** 2 - R ** 2 <= 0) or ((checkX - givenX2) ** 2 + (
                     checkY - givenY2) ** 2 - R ** 2 <= 0):
             return True
     return False
