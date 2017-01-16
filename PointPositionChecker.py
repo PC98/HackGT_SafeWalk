@@ -27,12 +27,7 @@ def make_line(checkX, checkY, givenX1, givenY1, givenX2, givenY2):
         elif ((checkX - givenX1) ** 2 + (checkY - givenY1) ** 2 - R ** 2 <= 0 or (checkX - givenX2) ** 2 + (
                     checkY - givenY2) ** 2 - R ** 2 <= 0):
             return True
-        else:
-            return False
-    else:
-        return False
-
+    return False
 
 def sign(line, checkX, checkY):
-    value = checkX * line[0] + checkY * line[1] + line[2]
-    return value
+    return checkX * line[0] + checkY * line[1] + line[2]
